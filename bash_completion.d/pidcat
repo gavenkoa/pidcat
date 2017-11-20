@@ -64,7 +64,7 @@ $1 ~/package:/ { gsub(/^.*:/,""); gsub(/\r*$/,""); print $1 }')
   COMPREPLY=( $(compgen -W "$apks" -- ${cur}) )
   return 0
 }
-complete -F _pidcat pidcat
+complete -F _pidcat pidcat pidcat.py
 
 # Local variables:
 # mode: shell-script
